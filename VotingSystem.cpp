@@ -13,7 +13,7 @@ class Candidate{
         int votes;
         char symbol;
     public:
-        void fillCandidate();
+        void fillCandidate(int);
         void display();
         void getVotes(int);
         friend void getResults(Candidate AllCandidates[]);
@@ -33,7 +33,7 @@ int main(){
         return 0;
     }
     for(int i=0;i<candidateCount;i++)
-        allCandidates[i].fillCandidate();
+        allCandidates[i].fillCandidate(i+1);
     // getting the number of voters
     int numVoters;
     cout<<"Enter the number of voters: ";
@@ -101,7 +101,7 @@ void Candidate:: display()
         cout<<symbol<<"\n";
 }
 
-void Candidate:: fillCandidate(){
+void Candidate:: fillCandidate(int n){
     int num = 0;
     cout<<"Available Symbols: \n";
     for (int j = 0; j < 10; j++) {
@@ -110,18 +110,18 @@ void Candidate:: fillCandidate(){
         cout<<j + 1<<" "<<symbols[j]<<"\n";
     }
 
-    cout<<"\nEnter the symbol number of candidate "<<": ";
+    cout<<"\nEnter the symbol number of candidate "<<n<<": ";
     cin>>num;
 
     if (num <= 0 || num > 10 || symbolTaken[num - 1] == 1) {
         cout<<"This Symbol is not available. Please choose from the available symbols\n";
         num = 0;
-        fillCandidate();
+        fillCandidate(n);
     }
     else {
         symbolTaken[num - 1] = 1;
         symbol = symbols[num - 1];
-        cout<<"Enter the name of candidate "<<": ";
+        cout<<"Enter the name of candidate "<<n<<": ";
         cin>>name;
         votes = 0;
     }
