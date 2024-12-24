@@ -17,12 +17,55 @@ class Candidate{
         void display();
         void getVotes(int);
         friend void getResults(Candidate AllCandidates[]);
+        int getVote(){
+            return votes;
+        }
+        string getName(){
+            return name;
+        }
+        char getSymbol(){
+            return symbol;
+        }
         
 };
+class VotingService{
+    public:
+            void getResults(Candidate allCandidates[])
+            {
 
+                int maxVotes = 0;
+                int winnerIndex = -1;
+                int winnerFrequency = 0;
+                for (int i = 0; i < candidateCount; i++) {
+                    if (allCandidates[i].getVote() > maxVotes) {
+                        maxVotes = allCandidates[i].getVote();
+                        winnerIndex = i;
+                    }
+                }
+
+                for (int i = 0; i < candidateCount; i++) {
+                    if (allCandidates[i].getVote() == maxVotes) {
+                        winnerFrequency++;
+                    }
+                }
+                cout<<"\n-----RESULT-----\n";
+
+                if (winnerFrequency > 1) {
+                    cout<<"No candidate has majority votes\n";
+                }
+                else if (winnerIndex != -1) {
+                    cout<<"The winner is: "<<allCandidates[winnerIndex].getName()<<"\nCandidate Symbol: "<<allCandidates[winnerIndex].getSymbol()<<"\nwith "<<maxVotes<<" votes!\n";
+                }
+                else {
+                    cout<<"No winner\n";
+                }
+            }
+
+};
 int main(){
     int choice;
     Candidate allCandidates[MAX_C];
+    VotingService service;
     // getting the number of candidates
     cout<<"Enter the number of candidates: ";
     cin>>candidateCount;
@@ -50,39 +93,10 @@ int main(){
     }
 
     // printing results
-    getResults(allCandidates);
+    service.getResults(allCandidates);
     return 0;
 }
-void getResults(Candidate allCandidates[])
-{
 
-    int maxVotes = 0;
-    int winnerIndex = -1;
-    int winnerFrequency = 0;
-    for (int i = 0; i < candidateCount; i++) {
-        if (allCandidates[i].votes > maxVotes) {
-            maxVotes = allCandidates[i].votes;
-            winnerIndex = i;
-        }
-    }
-
-    for (int i = 0; i < candidateCount; i++) {
-        if (allCandidates[i].votes == maxVotes) {
-            winnerFrequency++;
-        }
-    }
-    cout<<"\n-----RESULT-----\n";
-
-    if (winnerFrequency > 1) {
-        cout<<"No candidate has majority votes\n";
-    }
-    else if (winnerIndex != -1) {
-        cout<<"The winner is: "<<allCandidates[winnerIndex].name<<"\nCandidate Symbol: "<<allCandidates[winnerIndex].symbol<<"\nwith "<<maxVotes<<" votes!\n";
-    }
-    else {
-        cout<<"No winner\n";
-    }
-}
 void Candidate :: getVotes(int choice){
     // checking for valid choice
     if (choice >= 1 && choice <= candidateCount) {
