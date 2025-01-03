@@ -4,7 +4,6 @@
 ->The constructor in C++ has the same name as the class or structure. 
 ->It constructs the values i.e. provides data for the object which is why it is known as a constructor.
 
-
 Characteristics of Constructors in C++
 ->The name of the constructor is the same as its class name.
 ->Constructors are mostly declared in the public section of the class though they can be declared in the private section of the class.
@@ -22,7 +21,7 @@ Types of Constructors in C++
     Syntax of Default Constructor
         className() {
             // body_of_constructor
-        }
+    }
 
 ->Parameterized Constructor: 
     Parameterized constructors make it possible to pass arguments to constructors. 

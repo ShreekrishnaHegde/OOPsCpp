@@ -1,0 +1,51 @@
+Start
+   |
+   v
+[Rider enters details (Name, Contact, Pickup, Destination)]
+   |
+   v
+[Display Rider's Wallet Balance]
+   |
+   v
+[Search for Driver]
+   |
+   v
+[Driver enters details (Name, Contact, Vehicle)]
+   |
+   v
+[Driver receives ride request (Pickup, Destination)]
+   |
+   v
+[Driver accepts the ride?]
+   | Yes                          No
+   |                                |
+   v                                v
+[Display OTP]                  [Go back to finding a driver]
+   |
+   v
+[Driver enters OTP]
+   |
+   v
+[OTP matches?]
+   | Yes                           No
+   |                                 |
+   v                                 v
+[Start Ride]                   [Go back to finding a driver]
+   |
+   v
+[Ride completes]
+   |
+   v
+[Deduct fare from Rider's wallet]
+   |
+   v
+[Display updated wallet balance]
+   |
+   v
+[Rider gives rating]
+   |
+   v
+[Display Thank You message]
+   |
+   v
+End
