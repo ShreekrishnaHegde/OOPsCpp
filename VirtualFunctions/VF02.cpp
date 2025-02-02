@@ -43,8 +43,7 @@ object derived from that base. When a virtual function is called through a base-
 reference, the version of the function executed is determined by the object being
 referred to at the time of the call.
 The most common situation in which a virtual function is invoked through a base
-class reference is when the reference is a function parameter. For example, consider the
-following variation on the preceding program.
+class reference is when the reference is a function parameter.
 
 The function f( ) defines a reference parameter of type base. Inside main( ), the function
 is called using objects of type base, derived1, and derived2. Inside f( ), the specific
