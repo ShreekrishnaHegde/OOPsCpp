@@ -1,5 +1,5 @@
 /*
-Calling a Virtual Function Through a Base Class Pointer
+-------------------------------Calling a Virtual Function Through a Base Class Pointer--------------------------------
 */
 #include <iostream>
 using namespace std;
@@ -51,5 +51,4 @@ int main(){
     derived2 to be executed. 
 ->The key point here is that the kind of object to which p points determines which version of vfunc( ) is executed. 
 ->Further, this determination is made at run time, and this process forms the basis for run-time polymorphism.
-
 */

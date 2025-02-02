@@ -1,14 +1,6 @@
 /*
-The Virtual Attribute Is Inherited
-When a virtual function is inherited, its virtual nature is also inherited. This means that
-when a derived class that has inherited a virtual function is itself used as a base class
-for another derived class, the virtual function can still be overridden. Put differently, no
-matter how many times a virtual function is inherited, it remains virtual. For example,
-consider this program:
-In this case, derived2 inherits derived1 rather than base, but vfunc( ) is still virtua
-
+---------------------------------------The Virtual Attribute Is Inherited---------------------------------------
 */
-
 #include <iostream>
 using namespace std;
 
@@ -49,3 +41,10 @@ int main(){
     p->vfunc(); // access derived2's vfunc()
     return 0;
 }
+
+/*
+->When a virtual function is inherited, its virtual nature is also inherited. 
+->This means that
+when a derived class that has inherited a virtual function is itself used as a base class
+for another derived class, the virtual function can still be overridden. 
+*/

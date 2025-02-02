@@ -1,4 +1,5 @@
 /*
+------------------------------------------Pure Virtual Functions------------------------------------------
 The following program contains a simple example of a pure virtual function. The
 base class, number, contains an integer called val, the function setval( ), and the pure
 virtual function show( ). The derived classes hextype, dectype, and octtype inherit
@@ -51,10 +52,18 @@ int main(){
 }
 
 /*
-------------------------------------------Pure Virtual Functions------------------------------------------
 ->A pure virtual function is a virtual function that has no definition within the base class. 
 ->To declare a pure virtual function, use this general form:
     virtual type func-name(parameter-list) = 0;
 ->When a virtual function is made pure, any derived class must provide its own definition. 
     If the derived class fails to override the pure virtual function, a compile-time error will result.
+->If we do not override the pure virtual function in the derived class, then the derived class also becomes an abstract class.
+
+->A class that contains at least one pure virtual function is said to be abstract. 
+->Because an abstract class contains one or more functions for which there is no definition (that is,
+a pure virtual function), no objects of an abstract class may be created. Instead, an abstract
+class constitutes an incomplete type that is used as a foundation for derived classes.
+->Although you cannot create objects of an abstract class, you can create pointers and references to an abstract class. 
+->This allows abstract classes to support run-time
+polymorphism, which relies upon base-class pointers and references to select the proper virtual function.    
 */
