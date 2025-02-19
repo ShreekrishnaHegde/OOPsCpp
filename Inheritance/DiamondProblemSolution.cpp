@@ -9,21 +9,24 @@ class Base {
         void fun() { 
             cout << "Base" << endl; 
         }
+        Base() { 
+            cout << "Base class constructor" << endl; 
+        }
 };
 
 // Parent class 1 with virtual inheritance
 class Parent1 : virtual public Base {
     public:
-        void func() { 
-            cout << "Parent1" << endl; 
+        Parent1() { 
+            cout << "Parent1 class constructor" << endl; 
         }
 };
 
 // Parent class 2 with virtual inheritance
 class Parent2 : virtual public Base {
     public:
-        void func() { 
-            cout << "Parent2" << endl; 
+        Parent2() { 
+            cout << "Parent2 class constructor" << endl;
         }
 
 };
@@ -33,6 +36,9 @@ class Child : public Parent1, public Parent2 {
     public:
         void fun() { 
             cout << "Child" << endl; 
+        }
+        Child() { 
+            cout << "Child class constructor" << endl;
         }
 };
 
