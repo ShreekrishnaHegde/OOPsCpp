@@ -35,3 +35,39 @@ the dynamic resource allocated manually in the copy constructor using new operat
 ->Requires careful implementation to ensure all resources are correctly copied.
 
 */
+
+
+#include <iostream>
+using namespace std;
+
+class MyClass {
+    private:
+        int value;
+
+    public:
+        // Constructor
+        MyClass(int v){
+            this->value = v;
+        }
+        // Explicit Copy Constructor
+        MyClass(const MyClass& other) : value(other.value) {
+            cout << "Explicit Copy Constructor called" << endl;
+        }
+        void display() const { 
+            cout << "Value: " << value << endl; 
+        }
+};
+
+void processValue(MyClass obj) {
+  // Implicit copy constructor will be called here
+  obj.display();
+}
+
+int main() {
+  MyClass obj1(10);     // Constructor called
+  MyClass obj2 = obj1;  // Explicit copy constructor called
+  obj1.display();
+  obj2.display();
+  processValue(obj1);  // Implicit copy constructor called
+  return 0;
+}
