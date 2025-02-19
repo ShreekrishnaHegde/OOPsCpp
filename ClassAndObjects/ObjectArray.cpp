@@ -1,6 +1,5 @@
 /*
 The Array of Objects stores objects. An array of a class type is also known as an array of objects.
-
 */
 #include<iostream>
 using namespace std;
