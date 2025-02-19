@@ -26,8 +26,7 @@ public:
 class Child : public Parent1, public Parent2 {
 };
 
-int main()
-{
+int main(){
     Child* obj = new Child();
     obj->fun(); // Abiguity arises, as Child now has two copies of fun()
     return 0;
