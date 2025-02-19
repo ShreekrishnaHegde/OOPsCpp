@@ -1,7 +1,3 @@
-/*
-
-*/
-
 // C++ program to create a member function of another class
 // as a friend function
 #include <iostream>

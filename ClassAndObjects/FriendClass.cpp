@@ -3,8 +3,6 @@ A friend class can access private and protected members of other classes in whic
 
 Syntax:
 friend class class_name;    // declared in the base class
-
-
 */
 
 // C++ Program to demonstrate the
@@ -12,7 +10,7 @@ friend class class_name;    // declared in the base class
 #include <iostream>
 using namespace std;
 
-class GFG{
+class A{
 private:
     int private_variable;
 
@@ -20,14 +18,13 @@ protected:
     int protected_variable;
 
 public:
-    GFG()
-    {
+    A(){
         private_variable = 10;
         protected_variable = 99;
     }
 
     // friend class declaration
-    friend class F;
+    friend class B;
 };
 
 // Here, class F is declared as a
@@ -35,10 +32,9 @@ public:
 // F is a friend of class GFG. Class F
 // can access the private members of
 // class GFG.
-class F {
+class B {
 public:
-    void display(GFG& t)
-    {
+    void display(A& t){
         cout << "The value of Private Variable = "
              << t.private_variable << endl;
         cout << "The value of Protected Variable = "
@@ -47,10 +43,9 @@ public:
 };
 
 // Driver code
-int main()
-{
-    GFG g;
-    F fri;
+int main(){
+    A g;
+    B fri;
     fri.display(g);
     return 0;
 }
