@@ -13,8 +13,8 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     stud* S = new stud[6];
     delete[] S;
+    return 0;
 }
