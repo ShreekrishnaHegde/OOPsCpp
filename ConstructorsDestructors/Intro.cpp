@@ -9,3 +9,31 @@
 | 6      | Constructor can be overloaded.                                               | While it can’t be overloaded.                                  |
 | 7      | In a class, there can be multiple constructors.                              | While in a class, there is always a single destructor.         |
 */
+
+
+/*
+-------------------------------Characteristics of Constructors in C++--------------------------------
+->The name of the constructor is the same as its class name.
+->Constructors are mostly declared in the public section of the class though they can be declared in the private section of the class.
+->Constructors do not return values; hence they do not have a return type.
+->A constructor gets called automatically when we create the object of the class.
+    
+->Defining Constructors inside the class:
+    <class-name> (list-of-parameters) {
+     // constructor definition
+    }
+
+->Defining Constructors outside the class:
+    <class-name> {
+
+    // Declaring the constructor
+    // Definiton will be provided outside
+    <class-name>();
+
+    // Defining remaining class
+    };
+
+    <class-name>: :<class-name>(list-of-parameters){
+        // constructor definition 
+    }
+*/
