@@ -9,8 +9,12 @@ The scope resolution operator is used to override function in the Inheritance.
 #include <iostream>
 using namespace std;
 
+// Global x
+int x = 3;
 int main(){
-
+    // Local x
+    int x = 10;
+    // Printing the global x
+    cout << ::x;
     return 0;
-    
 }
