@@ -17,7 +17,6 @@ class SmartPointer{
 };
 
 int main(){
-
     SmartPointer ptr(new int());
     *ptr=100;
     cout<<*ptr;
