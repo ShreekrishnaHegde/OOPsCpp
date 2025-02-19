@@ -1,6 +1,7 @@
 /*
 
-Hybrid Inheritance is implemented by combining more than one type of inheritance. For example: Combining Hierarchical inheritance and Multiple Inheritance will create hybrid inheritance in C++
+Hybrid Inheritance is implemented by combining more than one type of inheritance. 
+For example: Combining Hierarchical inheritance and Multiple Inheritance will create hybrid inheritance in C++
 
 
 */
