@@ -10,6 +10,7 @@ class subclass_name : access_mode base_class1, access_mode base_class2, ....
 };
 Here, the number of base classes will be separated by a comma (‘, ‘) and the access mode for every base class must be specified and can be different.
 
+The constructors of inherited classes are called in the same order in which they are inherited.
 
 */
 

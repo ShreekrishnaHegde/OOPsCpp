@@ -46,3 +46,4 @@ int main()
     Car obj;
     return 0;
 }
+// Output

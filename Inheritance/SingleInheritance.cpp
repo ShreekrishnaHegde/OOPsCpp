@@ -1,3 +1,17 @@
+/*
+
+In single inheritance, a class is allowed to inherit from only one class. i.e. one base class is inherited by one derived class only.
+
+Syntax
+
+class subclass_name : access_mode base_class
+{
+  //  body of subclass
+};
+
+*/
+
+
 // C++ program to demonstrate how to implement the Single
 // inheritance
 #include <iostream>
