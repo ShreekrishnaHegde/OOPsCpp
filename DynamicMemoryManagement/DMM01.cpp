@@ -5,7 +5,7 @@
 // C++ program to demonstrate how to create dynamic variable
 // using new
 #include <iostream>
-#include <memory>
+
 using namespace std;
 
 int main(){
