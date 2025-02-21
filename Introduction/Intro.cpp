@@ -22,6 +22,25 @@
    allocation, free() for de-allocation.        | 
 
 
+--------------------------------Features of OBJECT ORIENTED PROGRAMMING--------------------------------
+------->Class
+->A class is a user-defined data type. 
+->It consists of data members and member functions, which can be accessed and used by creating an instance of that class. 
+->A class is like a blueprint for an object.  
+->For Example: Consider the Class of Cars. There may be many cars with different names and brands but all of them will 
+   share some common properties like all of them will have 4 wheels, Speed Limit, Mileage range, etc. So here, Car is 
+   the class, and wheels, speed limits, mileage are their properties.
 
+------->Object
+->An Object is an instance of a Class. 
+->When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated. 
+->An object has an identity, state, and behavior. 
+->Each object contains data and code to manipulate the data.
+->For example “Dog” is a real-life Object, which has some characteristics like color, Breed, Bark, Sleep, and Eats.
 
-*/
+------->Data Abstraction
+-> Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or
+ implementation. 
+->Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of 
+   the car or applying brakes will stop the car, but he does not know about how on pressing the accelerator the speed is increasing, 
+   he does not know about the inner mechanism of the car or the implementation of the accelerator, brakes, etc in the car.
