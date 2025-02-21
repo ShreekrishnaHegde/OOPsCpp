@@ -4,6 +4,15 @@
     assigned by the compiler if the calling function doesn’t provide a value for those parameters. 
 ->If the value is passed for it, the default value is overridden by the passed value.
 
+
+---------------Rules for Default Arguments----------------
+1.Default Values Must Be Specified in Function Declarations
+    The default values for parameters must be specified in the function declaration (or prototype). 
+    If a function is declared and defined separately, the default values must be in the declaration, not in definition.
+2. Default Arguments Cannot Be Modified
+3. Default Arguments Must Be Provided from Right to Left
+    In a function with multiple parameters, default values must be provided from the rightmost parameter to the left. 
+    If a parameter has a default argument, all parameters to its right must also have default values.
 */
 
 #include <iostream>
