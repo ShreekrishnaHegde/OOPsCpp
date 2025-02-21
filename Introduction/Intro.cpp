@@ -44,3 +44,45 @@
 ->Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of 
    the car or applying brakes will stop the car, but he does not know about how on pressing the accelerator the speed is increasing, 
    he does not know about the inner mechanism of the car or the implementation of the accelerator, brakes, etc in the car.
+
+------->Encapsulation
+->Encapsulation is defined as the wrapping up of data under a single unit. 
+->It is the mechanism that binds together code and the data it manipulates. 
+->In Encapsulation, the variables or data of a class are hidden from any other class and can be accessed only through 
+   any member function of their class in which they are declared. 
+->It is also known as data-hiding
+
+------->Inheritance
+->The capability of a class to derive properties and characteristics from another class is called Inheritance. 
+->When we write a class, we inherit properties from other classes. 
+->So when we create a class, we do not need to write all the properties and functions again and again, as these 
+   can be inherited from another class that possesses it. Inheritance allows the user to reuse the code whenever possible and reduce its redundancy.
+
+
+When a variable is declared as a reference, it becomes an alternative name for an existing variable. A variable can be declared as a reference by putting ‘&’ in the declaration. 
+
+Also, we can define a reference variable as a type of variable that can act as a reference to another variable. ‘&’ is used for signifying the address of a variable or any memory. Variables associated with reference variables can be accessed either by its name or by the reference variable associated with it.
+
+Applications of Reference in C++
+There are multiple applications for references in C++, a few of them are mentioned below:
+
+Modify the passed parameters in a function
+Avoiding a copy of large structures
+In For Each Loop to modify all objects
+For Each Loop to avoid the copy of objects
+
+
+Limitations of References
+Once a reference is created, it cannot be later made to reference another object; it cannot be reset. This is often done with pointers. 
+References cannot be NULL. Pointers are often made NULL to indicate that they are not pointing to any valid thing. 
+A reference must be initialized when declared. There is no such restriction with pointers.
+
+| References                                               | Pointers                                                            |
+|----------------------------------------------------------|---------------------------------------------------------------------|
+| The variable cannot be reassigned in Reference.          | The variable can be reassigned in Pointers.                         |
+| It shares the same address as the original variable.     | Pointers have their own memory address.                             |
+| It is referring to another variable.                     | It is storing the address of the variable.                          |
+| It does not have null value.                             | It can have value assigned as null.                                 |
+| This variable is referenced by the method pass by value. | The pointer does its work by the method known as pass by reference. |
+
+*/
