@@ -59,23 +59,50 @@
    can be inherited from another class that possesses it. Inheritance allows the user to reuse the code whenever possible and reduce its redundancy.
 
 
-When a variable is declared as a reference, it becomes an alternative name for an existing variable. A variable can be declared as a reference by putting ‘&’ in the declaration. 
-
-Also, we can define a reference variable as a type of variable that can act as a reference to another variable. ‘&’ is used for signifying the address of a variable or any memory. Variables associated with reference variables can be accessed either by its name or by the reference variable associated with it.
-
-Applications of Reference in C++
-There are multiple applications for references in C++, a few of them are mentioned below:
-
-Modify the passed parameters in a function
-Avoiding a copy of large structures
-In For Each Loop to modify all objects
-For Each Loop to avoid the copy of objects
+-----------------------------------Variables in C++--------------------------------
+In C++, variable is a name given to a memory location. 
+The value stored in a variable can be accessed or changed during program execution.
 
 
-Limitations of References
-Once a reference is created, it cannot be later made to reference another object; it cannot be reset. This is often done with pointers. 
-References cannot be NULL. Pointers are often made NULL to indicate that they are not pointing to any valid thing. 
-A reference must be initialized when declared. There is no such restriction with pointers.
+Syntax of Variables:
+   type name;
+
+   type: type of data that a variable can store.
+   name: name assigned to the variable.
+
+
+Types of Variables
+
+int: For storing integers or whole numbers.
+float: For storing real numbers with decimal points.
+char: For storing single characters.
+bool: For storing boolean value i.e. true and false.
+string: For storing the textual data.
+
+---------------->Rules For Naming Variable
+The names given to a variable is called identifiers. There are some rules for giving a name to the variable:
+The name of the variable contains letters, digits, and underscores.
+The name of the variable is case sensitive (e.g. Arr and arr both are different variables).
+The name of the variable does not contain any whitespace and special characters (ex #, $, %, *, etc).
+All the variable names must begin with a letter of the alphabet or an underscore (_).
+We cannot used C++ keyword (e.g. float, double, class) as a variable name.
+
+
+
+
+-------------------------------Reference in C++--------------------------------
+->When a variable is declared as a reference, it becomes an alternative name for an existing variable. 
+->A variable can be declared as a reference by putting ‘&’ in the declaration. 
+
+--------->Applications of Reference in C++
+   Modify the passed parameters in a function
+   Avoiding a copy of large structures
+
+
+-------->Limitations of References
+   Once a reference is created, it cannot be later made to reference another object; it cannot be reset. 
+   References cannot be NULL. 
+   A reference must be initialized when declared. 
 
 | References                                               | Pointers                                                            |
 |----------------------------------------------------------|---------------------------------------------------------------------|

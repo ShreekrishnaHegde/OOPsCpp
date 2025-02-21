@@ -1,5 +1,6 @@
 /*
-
+->A C++ function prototype is a declaration of a function that specifies its name, return type, and parameters, 
+    enabling the compiler to recognize the function before its actual definition.
 ->Function overloading is a feature of object-oriented programming where two or more functions can have 
     the same name but different parameters.
 
